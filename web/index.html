@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Keyboard Kickoff</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-screen="home">
+<header class="top">
+  <button class="brand" data-go="home" onclick="KK.go('home')" aria-label="Keyboard Kickoff home">
+    <svg width="34" height="34" viewBox="0 0 64 64" aria-hidden="true"><rect x="4" y="12" width="56" height="40" rx="10" fill="#0f172a" stroke="#22c55e" stroke-width="4"/><circle cx="32" cy="32" r="11" fill="#fff"/><path d="M32 25 L38 29.5 L35.7 36.5 L28.3 36.5 L26 29.5Z" fill="#0f172a"/></svg>
+    <span>Keyboard <b>Kickoff</b></span></button>
+  <nav class="nav"><button data-go="home">Home</button><button data-go="lessons">Lessons</button><button data-go="practice">Practice</button><button data-go="board">Scoreboard</button><button data-go="locker">Locker Room</button></nav>
+  <div class="top-r"><button id="sound" class="icon-btn" title="Sound on/off">🔊</button><button id="chip" class="chip" title="Switch player"></button></div>
+</header>
+<div class="kbd-note">⌨️ <b>Keyboard Kickoff needs a real keyboard.</b> Open it on a laptop or computer to play. You can still look around here.</div>
+<main id="view"></main>
+<footer class="foot">Keyboard Kickoff · works offline · progress saves on this computer only</footer>
+<script src="words.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

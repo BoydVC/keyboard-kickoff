@@ -38,7 +38,7 @@
   W.teams = ["Ravens","Orioles","Chelsea","Terps","Hornets","Blues","Birds","Turtles"];
   W.capsPunct = [
     "Go, Ravens! Go, Orioles! Go, Terps!",
-    "Char passes to Vic. Vic shoots. Goal!",
+    "Alex passes to Sam. Sam shoots. Goal!",
     "Is it game day? Yes, it is!",
     "Chelsea fans sing loud on match day.",
     "Fear the Turtle, Terps fans!",

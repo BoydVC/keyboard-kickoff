@@ -23,7 +23,7 @@ async function wordDone(o) { await waitPeek(); const n = await b.ev("KK.peek() =
 await b.viewport(1280, 800);
 await b.goto(URL + "?fast&drill=12", 1000);
 await b.reload(true);
-// seed real progress at kid-realistic speeds: Vic ~ 20-25 WPM, Char ~ 30 WPM, with a few slips
+// seed real progress at kid-realistic speeds: Sam ~ 20-25 WPM, Alex ~ 30 WPM, with a few slips
 const seed = [["vic", ["h1", "h2"], 430, 0.05], ["char", ["h1", "h2", "t1", "t2"], 300, 0.035]];
 for (const [p, ls, d, s] of seed) {
   await b.ev(`KK.select("${p}")`);

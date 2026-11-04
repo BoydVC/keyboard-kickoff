@@ -26,10 +26,10 @@ check(all(set(w) <= home for w in wb["homeRow"]), f"home-row words use only home
 toprow = [w for w in allw if set(w) <= home | top]
 check(len(toprow) >= 20, f"enough home+top-row words for the Top Row lesson ({len(toprow)})")
 sent = wb["sentences"]["vic"] + wb["sentences"]["char"] + sum((v for v in wb["practice"].values() if v), [])
-check(len(wb["sentences"]["vic"]) >= 12 and len(wb["sentences"]["char"]) >= 12, "grade-level sentence banks for Vic (6th) and Char (8th)")
+check(len(wb["sentences"]["vic"]) >= 12 and len(wb["sentences"]["char"]) >= 12, "grade-level sentence banks for Sam (6th) and Alex (8th)")
 check(not any(re.search(r"\d", s) for s in sent), "sentence banks state no numbers/stats (digits only appear in the Numbers lesson)")
 avg = lambda L: sum(len(s.split()) for s in L) / len(L)
-check(avg(wb["sentences"]["char"]) > avg(wb["sentences"]["vic"]), f"Char's sentences are longer than Vic's ({avg(wb['sentences']['char']):.1f} vs {avg(wb['sentences']['vic']):.1f} words)")
+check(avg(wb["sentences"]["char"]) > avg(wb["sentences"]["vic"]), f"Alex's sentences are longer than Sam's ({avg(wb['sentences']['char']):.1f} vs {avg(wb['sentences']['vic']):.1f} words)")
 check(all(len(w) <= 8 for w in wb["short"] + wb["medium"]) and min(len(w) for w in wb["long"]) >= 7, "game word lists graded short / medium / long")
 
 # stdlib server on 127.0.0.1:4353 (or a spare port if 4353 is busy)

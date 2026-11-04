@@ -16,8 +16,8 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 /* ---------------- players & storage ---------------- */
 const PLAYERS = {
-  char: { name: "Char", full: "Charlotte", color: "#8b5cf6", num: "13", tag: "U14 striker · 8th grade", target: 22, level: "char" },
-  vic: { name: "Vic", full: "Victor", color: "#f97316", num: "11", tag: "12U soccer & 11U baseball · 6th grade", target: 16, level: "vic" },
+  char: { name: "Alex", full: "Alex", color: "#8b5cf6", num: "13", tag: "U14 striker · 8th grade", target: 22, level: "char" },
+  vic: { name: "Sam", full: "Samuel", color: "#f97316", num: "11", tag: "12U soccer & 11U baseball · 6th grade", target: 16, level: "vic" },
   guest: { name: "Guest", full: "Guest", color: "#14b8a6", num: "G", tag: "Anyone can play", target: 18, level: "guest" },
 };
 const KEY = "keyboard-kickoff-v1";

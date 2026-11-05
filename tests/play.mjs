@@ -84,7 +84,7 @@ try {
 
   // leaderboard
   await b.ev(`KK.go("board")`); await sleep(100);
-  check(await b.ev(`document.querySelectorAll('.board thead th').length === 4 && /Char/.test(document.querySelector('.board').textContent) && /Vic/.test(document.querySelector('.board').textContent)`), "sibling scoreboard lists Alex, Sam and Guest");
+  check(await b.ev(`document.querySelectorAll('.board thead th').length === 4 && /Alex/.test(document.querySelector('.board').textContent) && /Sam/.test(document.querySelector('.board').textContent)`), "sibling scoreboard lists Alex, Sam and Guest");
   // persistence
   await b.reload();
   check(await b.ev(`KK.state().profiles.char.sessions.length >= 5 && KK.state().profiles.vic.sessions.length === 12`), "profiles persist in localStorage after reload");

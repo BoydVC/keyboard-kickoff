@@ -47,7 +47,7 @@ try {
   check(await b.ev(`KK.state().profiles.char.keyErr[KK.result().trouble[0][0]] === 1`), "per-key error heatmap stored on profile");
   check(await b.ev(`document.querySelectorAll('.heat-wrap .key.hot').length === 1`), "results heatmap marks exactly one hot key");
 
-  // every lesson completes (Vic profile)
+  // every lesson completes (Sam profile)
   await b.ev(`KK.select("vic")`); let lessonsOk = 0; const ids = await b.ev("KK.lessons()");
   for (const id of ids) { await b.ev(`KK.startLesson("${id}")`); await sleep(60); await autoplay(b, { delay: 8 }); const rr = await b.ev("KK.result()"); if (rr.mode === "lesson" && rr.extra.lesson === id && rr.errors === 0 && rr.acc === 100) lessonsOk++; }
   check(lessonsOk === ids.length, `all ${ids.length} lessons complete with simulated typing (${lessonsOk})`);
@@ -84,7 +84,7 @@ try {
 
   // leaderboard
   await b.ev(`KK.go("board")`); await sleep(100);
-  check(await b.ev(`document.querySelectorAll('.board thead th').length === 4 && /Char/.test(document.querySelector('.board').textContent) && /Vic/.test(document.querySelector('.board').textContent)`), "sibling scoreboard lists Char, Vic and Guest");
+  check(await b.ev(`document.querySelectorAll('.board thead th').length === 4 && /Alex/.test(document.querySelector('.board').textContent) && /Sam/.test(document.querySelector('.board').textContent)`), "sibling scoreboard lists Alex, Sam and Guest");
   // persistence
   await b.reload();
   check(await b.ev(`KK.state().profiles.char.sessions.length >= 5 && KK.state().profiles.vic.sessions.length === 12`), "profiles persist in localStorage after reload");

@@ -1,6 +1,6 @@
 # Keyboard Kickoff
 
-**A sports-themed touch-typing trainer for Char and Vic** — home-row lessons, finger-coloured keyboard highlights, then Penalty Kick, Home Run Derby and a Two-Minute Drill, with calm Practice mode and a sibling scoreboard that lives only on this computer.
+**A sports-themed touch-typing trainer for Alex and Sam** — home-row lessons, finger-coloured keyboard highlights, then Penalty Kick, Home Run Derby and a Two-Minute Drill, with calm Practice mode and a sibling scoreboard that lives only on this computer.
 
 ## Modes
 * **🗺️ Lesson Path** — 12 lessons: home row → top row → bottom row → numbers → capitals/punctuation → full sentences. Stars for finish / 90%+ / 96%+ and target WPM. On-screen keyboard highlights the next key and names the finger (and Shift) to use.
@@ -10,7 +10,7 @@
 * **🧘 Practice** — no clock, no score. Sports, school & writing, or story-starter sentences at your own pace.
 
 ## Profiles & progress
-Char (U14 / 8th grade), Vic (12U soccer & 11U baseball / 6th grade) and Guest. Each profile stores WPM, accuracy, day streaks, per-key error heatmap, lesson stars and badges in `localStorage` (`keyboard-kickoff-v1`). Sibling Scoreboard and Locker Room are local only — no accounts, no network.
+Alex (U14 / 8th grade), Sam (12U soccer & 11U baseball / 6th grade) and Guest. Each profile stores WPM, accuracy, day streaks, per-key error heatmap, lesson stars and badges in `localStorage` (`keyboard-kickoff-v1`). Sibling Scoreboard and Locker Room are local only — no accounts, no network.
 
 Word banks are original and kid-appropriate (sports, school, grade-level sentences). Team names like Ravens / Orioles / Chelsea / Terps / Hornets appear as cheers only — no real-world stats, scores or roster facts.
 
